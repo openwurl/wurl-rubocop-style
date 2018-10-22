@@ -14,7 +14,7 @@ module RuboCop
       # - use `render plain: ...` to render plain text (no ERB); OR
       # - extract the ERB into a template file and render that template.
       class RailsRenderInline < Cop
-        MSG = <<~MSG
+        MSG = <<-MSG
 Instead of `render inline:`, which can have memory leaks,
 use `render plain: "..."` for plain text, or extract a template for ERB.
 MSG
