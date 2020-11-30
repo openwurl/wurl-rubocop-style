@@ -15,14 +15,14 @@ Rubocop 0.68 removed performance cops and 0.72 removed Rails cops. However, upgr
 
 ``` ruby
 gem "rubocop", "< 0.68"
-gem "rubocop-github"
+gem "wurl-rubocop-style"
 ```
 
 **.rubocop.yml**
 
 ``` yaml
 inherit_gem:
-  rubocop-github:
+  wurl-rubocop-style:
     - config/default.yml
     - config/rails.yml
 ```
@@ -32,7 +32,7 @@ inherit_gem:
 **Gemfile**
 
 ``` ruby
-gem "rubocop-github"
+gem "wurl-rubocop-style"
 gem "rubocop-performance", require: false
 gem "rubocop-rails", require: false
 ```
@@ -41,7 +41,7 @@ gem "rubocop-rails", require: false
 
 ``` yaml
 inherit_gem:
-  rubocop-github:
+  wurl-rubocop-style:
     - config/default_edge.yml
     - config/rails_edge.yml
 ```

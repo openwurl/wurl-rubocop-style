@@ -2,3 +2,183 @@ inherit_from: _default_shared.yml
 
 require:
   - rubocop-performance
+
+AllCops:
+  # I wish I could enable New Cops automatically,
+  # but it of course will break builds and it's a large codebase.
+  NewCops: disable
+  TargetRubyVersion: 2.7.0
+  Include:
+    - tasks/*.rake
+    - app/**/*.rb
+    - lib/**/*.rb
+  Exclude:
+    - bin/**/*
+    - config/**/*
+    - db/**/*
+    - libexec/**/*
+    - script/**/*
+    - spec/**/*
+    - tmp/**/*
+    - vendor/**/*
+
+Naming/FileName:
+  Exclude:
+    - Gemfile
+
+Style/Documentation:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+
+# Offense count: 50
+# Configuration parameters: AllowURI.
+Layout/LineLength:
+  # PR UI needs horiz scrolling after 118 chars. See STYLEGUIDE.md
+  Max: 118
+  Severity: warning
+
+Metrics/AbcSize:
+  Max: 60
+
+Metrics/PerceivedComplexity:
+  Max: 15
+
+# Offense count: 5
+# Configuration parameters: CountComments.
+Metrics/MethodLength:
+  Max: 40
+
+Lint/UselessAssignment:
+  Enabled: true
+  Severity: refactor
+
+Lint/ShadowingOuterLocalVariable:
+  Enabled: true
+  Severity: refactor
+
+Lint/DuplicateBranch: # (new in 1.3)
+  Enabled: true
+  Severity: warning
+
+Lint/DuplicateRegexpCharacterClassElement: # (new in 1.1)
+  Enabled: true
+  Severity: warning
+
+Lint/EmptyBlock: # (new in 1.1)
+  Enabled: true
+  Severity: warning
+
+Lint/EmptyClass: # (new in 1.3)
+  Enabled: true
+  Severity: warning
+
+Lint/NoReturnInBeginEndBlocks: # (new in 1.2)
+  Enabled: true
+  Severity: warning
+
+Lint/ToEnumArguments: # (new in 1.1)
+  Enabled: true
+  Severity: warning
+
+Lint/UnmodifiedReduceAccumulator: # (new in 1.1)
+  Enabled: true
+  Severity: warning
+
+Style/ArgumentsForwarding: # (new in 1.1)
+  Enabled: true
+  Severity: warning
+
+Style/CollectionCompact: # (new in 1.2)
+  Enabled: true
+  Severity: warning
+
+Style/DocumentDynamicEvalDefinition: # (new in 1.1)
+  Enabled: true
+  Severity: warning
+
+Style/NegatedIfElseCondition: # (new in 1.2)
+  Enabled: true
+  Severity: warning
+
+Style/NilLambda: # (new in 1.3)
+  Enabled: true
+  Severity: warning
+
+Style/RedundantArgument: # (new in 1.4)
+  Enabled: true
+  Severity: warning
+
+Style/SwapValues: # (new in 1.1)
+  Enabled: true
+  Severity: warning
+
+Layout/SpaceAroundOperators:
+  Enabled: true
+  Severity: warning
+
+Layout/SpaceAfterComma:
+  Enabled: true
+  Severity: warning
+
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+  Severity: warning
+
+Layout/CommentIndentation:
+  Enabled: true
+  Severity: warning
+
+Layout/EmptyLineAfterGuardClause:
+  Enabled: true
+  Severity: warning
+
+Style/RaiseArgs:
+  Enabled: true
+  Severity: warning
+
+
+Style/MethodCallWithoutArgsParentheses:
+  Enabled: true
+  Severity: warning
+
+
+Style/SafeNavigation:
+  Enabled: true
+  Severity: warning
+
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: true
+  Severity: warning
+
+Layout/EmptyLinesAroundClassBody:
+  Enabled: true
+  Severity: warning
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  Severity: convention
+
+# See STYLEGUIDE.md/Strings
+# Use double quote strings differs from rubocop default
+Style/StringLiterals:
+  Enabled: false
+  EnforcedStyle: double_quotes
+  Severity: warning
+
+Layout/HashAlignment:
+  Enabled: true
+  Severity: convention
+
+Style/NumericLiterals:
+  Enabled: true
+  Severity: refactor
+
+Style/MutableConstant:
+  Enabled: true
+  Severity: warning
+
