@@ -1,4 +1,4 @@
-# Wurl Rubocop Style ![CI](https://github.com/github/rubocop-github/workflows/CI/badge.svg?event=push)
+# Wurl Rubocop Style ![CI](https://github.com/github/wurl-rubocop-style/workflows/CI/badge.svg?event=push)
 
 This repository provides recommended RuboCop configuration and additional Cops for use on Wurl open source and internal Ruby projects.
 
