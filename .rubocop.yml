@@ -4,3 +4,9 @@ Naming/FileName:
   Enabled: true
   Exclude:
     - "wurl-rubocop-style.gemspec"
+
+AllCops:
+  Exclude:
+    # These use github's rules and are out of scope for us.
+    - 'lib/rubocop/cop/github/**/*.*'
+    - vendor/**/*

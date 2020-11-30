@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "minitest", "~> 5.10"
   s.add_development_dependency "rake", "~> 12.0"
 
-  s.required_ruby_version = ">= 2.6.0"
+  s.required_ruby_version = ">= 2.7.1"
 
   s.email = "info@wurl.com"
   s.authors = "GitHub, Wurl"
