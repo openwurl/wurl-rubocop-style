@@ -7,7 +7,6 @@ AllCops:
   # I wish I could enable New Cops automatically,
   # but it of course will break builds and it's a large codebase.
   NewCops: disable
-  TargetRubyVersion: 2.7.0
   Include:
     - tasks/*.rake
     - app/**/*.rb
