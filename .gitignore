@@ -20,3 +20,5 @@ vendor
 _yardoc
 doc/
 .DS_Store
+
+.idea
