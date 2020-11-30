@@ -206,6 +206,8 @@ Naming/ClassAndModuleCamelCase:
   Enabled: true
 
 Naming/FileName:
+  Exclude:
+    - Gemfile
   Enabled: true
 
 Naming/MethodName:
