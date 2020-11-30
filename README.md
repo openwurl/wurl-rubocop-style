@@ -1,6 +1,9 @@
-# RuboCop GitHub ![CI](https://github.com/github/rubocop-github/workflows/CI/badge.svg?event=push)
+# Wurl Rubocop Style ![CI](https://github.com/github/rubocop-github/workflows/CI/badge.svg?event=push)
 
-This repository provides recommended RuboCop configuration and additional Cops for use on GitHub open source and internal Ruby projects.
+This repository provides recommended RuboCop configuration and additional Cops for use on Wurl open source and internal Ruby projects.
+
+It is a fork and is heavily based on [Rubocop Github](https://github.com/github/rubocop-github).
+If you ever find yourself in a situation where there is something that is not mentioned here, going to the most current Github Rubocop Style Guide for a decision will likely have you doing The Right Thing&trade;.
 
 ## Usage
 

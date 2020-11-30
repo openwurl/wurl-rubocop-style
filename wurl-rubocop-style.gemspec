@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |s|
-  s.name = "rubocop-github"
-  s.version = "0.16.1"
-  s.summary = "RuboCop GitHub"
-  s.description = "Code style checking for GitHub Ruby repositories "
-  s.homepage = "https://github.com/github/rubocop-github"
+  s.name = "wurl-rubocop-style"
+  s.version = "0.1"
+  s.summary = "RuboCop Settings for Wurl Projects"
+  s.description = "Code style checking for Wurl Ruby repositories "
+  s.homepage = "https://github.com/openwurl/wurl-rubocop-style"
   s.license = "MIT"
 
   s.files = Dir["README.md", "STYLEGUIDE.md", "LICENSE", "config/*.yml", "lib/**/*.rb", "guides/*.md"]
@@ -20,6 +20,6 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = ">= 2.1.0"
 
-  s.email = "engineering@github.com"
-  s.authors = "GitHub"
+  s.email = "info@wurl.com"
+  s.authors = "GitHub, Wurl"
 end
