@@ -54,3 +54,9 @@ inherit_gem:
 ## The Cops
 
 All cops are located under [`lib/rubocop/cop/github`](lib/rubocop/cop/github), and contain examples/documentation.
+
+## Using it with editors
+
+You are encouraged to create files describing how you would setup rubocop in-file for the IDE or editor of your choice and adding the files and instructions here:
+
+* [Instructions for VSCode](README.vscode.md)
